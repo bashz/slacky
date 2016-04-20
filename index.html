@@ -10,8 +10,24 @@
     <body>
         <div>Content</div>
         <div ng-controller="slack">
-            <input type="text" ng-model="chat" />
-            <h1>Hello {{ chat }}</h1>
+            
+            <ul>
+                <li ng-repeat="user in users">
+                    <h6>{{user.real_name}}</h6>
+                </li>
+            </ul>
+            <ul>
+                <li ng-repeat="msg in msgs">
+                    <h6>{{msg.on}} @ {{msg.team}}</h6>
+                    <dl>
+                        <dt>{{msg.from}}</dt>
+                        <dd>
+                            <span>{{msg.at}}</span>
+                            {{msg.body}}
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
         </div>
     </body>
 </html>
