@@ -1,0 +1,10 @@
+{
+  "name": "slacky",
+  "version": "0.0.1",
+  "description": "Small slack integration",
+  "license": "GNU GPL2",
+  "dependencies": {
+    "angular": "1.5.x",
+    "bootstrap": "~3.3.6"
+  }
+}
